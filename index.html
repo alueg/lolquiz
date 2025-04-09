@@ -18,11 +18,12 @@
     <script>
         window.onload = function() {
             // Show the image container
-            document.getElementById('imageContainer').style.display = 'block';
+            var imageContainer = document.getElementById('imageContainer');
+            imageContainer.style.display = 'block';
 
             // Set a timeout to hide the image after 2 seconds
             setTimeout(function() {
-                document.getElementById('imageContainer').style.display = 'none';
+                imageContainer.style.display = 'none';
             }, 2000); // 2000 milliseconds = 2 seconds
         };
     </script>
